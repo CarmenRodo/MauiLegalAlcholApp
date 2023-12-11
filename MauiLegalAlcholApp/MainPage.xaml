@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiLegalAlcholApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+
+            <Label
+                Text="Legally Buy Alcohol Verification"
+                FontSize="Title"
+                />
+            
+            <Label x:Name="Out_text" Text="You can buy alcohol legally in..." Padding="30,10,30,10" FontSize="20" ></Label>
+
+
+            <DatePicker x:Name="birthDate" Format="D" Margin="30, 10, 20, 30"   DateSelected="OnDateSelected"/>
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
