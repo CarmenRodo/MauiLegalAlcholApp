@@ -10,8 +10,10 @@
 
 
             <Label
-                Text="Legally Buy Alcohol Verification"
+                Text="Legally Buy Alcohol Calc"
                 FontSize="Title"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
                 />
             
             <Label x:Name="Out_text" Text="You can buy alcohol legally in..." Padding="30,10,30,10" FontSize="20" ></Label>
@@ -19,6 +21,39 @@
 
             <DatePicker x:Name="birthDate" Format="D" Margin="30, 10, 20, 30"   DateSelected="OnDateSelected"/>
 
+            <Label
+                x:Name="BMI_Out_text"
+                Text="See your BMI Calculated!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="Title"
+                HorizontalOptions="Center" />
+
+            <Entry
+                x:Name="In_weight"
+                Placeholder="Please Enter Weight in Pounds: "
+                FontSize="Small"
+                ></Entry>
+
+            <Editor x:Name="In_heightFeet" Placeholder="Please enter height in feet:" FontSize="16"></Editor>
+            <Editor x:Name="In_heightInches" Placeholder="Please enter height in inches:" FontSize="16"></Editor>
+
+            <Button Text="Calculate BMI" Clicked="Button_Clicked"></Button>
+
+            <Label
+                Text="Morse Code Keyboard"
+                FontSize="Title"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                />
+
+            <Label x:Name="Out_char" FontSize="20" Margin="30,10,30,10" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" ></Label>
+            <Label x:Name="In_char" FontSize="20" Margin="30,10,30,10" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" ></Label>
+
+            <Button Text="Click for a Dot"  Clicked="Dot_Clicked" ></Button>
+            <Button Text="Click for a Dash"  Clicked="Dash_Clicked" ></Button>
+            <Button Text="Click for a Space" Clicked="Space_Clicked" ></Button>
+
+            <Button Text="Clear Morse" Clicked="ClearMorse"></Button>
 
 
         </VerticalStackLayout>
